@@ -22,7 +22,7 @@ const ItemCount = ({ item, id, add, substract, counter }) => {
             </div>
             { !open 
             ? (<div>
-                <Button variant="contained" color="primary" onClick={ () => addAndOpen(item, counter, id)}> <h4>Agregar al <Cart/> </h4>
+                <Button variant="secondary" onClick={ () => addAndOpen(item, counter, id)}> <h4>Agregar al <Cart/> </h4>
                 </Button>
             </div>) 
             : (<div>
