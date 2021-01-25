@@ -3,7 +3,6 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./NavBar"
 import './style.css'
-import Main from './Main';
 import ItemListContainer from './ItemListContainer';
 import ItemDetailContainer from './ItemDetailContainer'
 import CartProvider from './CartContext';
@@ -16,9 +15,6 @@ function App() {
                 <BrowserRouter>    
                     <NavBar/>
                     <Switch>
-                        <Route exact path="/">
-                            <Main/>
-                        </Route>
                         <Route exact path="/">
                             <ItemListContainer/>
                         </Route>
